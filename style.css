@@ -1,15 +1,65 @@
+/* Global Styling: พื้นฐานของหน้า */
 body {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif; /* ใช้ฟอนต์ที่ดูทันสมัยขึ้น */
+  background-color: #f4f7f6; /* สีพื้นหลังอ่อนๆ */
+  color: #1e3a5f; /* สีตัวอักษรหลักที่เข้มขึ้น */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* ทำให้หน้าจอเต็มความสูง */
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container: กล่องหลักของเนื้อหา */
+.container {
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้ดูมีมิติ */
+  max-width: 600px;
+  width: 100%;
   text-align: center;
-  margin-top: 50px;
 }
 
+/* Heading (h1): หัวข้อ */
 h1 {
-  font-size: 50px;
-  color: #007acc;
+  font-size: 48px;
+  color: #007acc; /* สีน้ำเงินสว่าง */
+  margin-bottom: 15px;
+  letter-spacing: -0.5px; /* ปรับระยะห่างตัวอักษรเล็กน้อย */
 }
 
+/* Paragraph (p): เนื้อหา */
 p {
-  font-size: 18px;
-  color: #333;
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Button: ปุ่ม */
+button {
+  background-color: #007acc;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease; /* เพิ่ม Transition */
+  box-shadow: 0 4px 8px rgba(0, 122, 204, 0.3);
+}
+
+/* Button Hover State: เมื่อเอาเมาส์ไปชี้ */
+button:hover {
+  background-color: #005f99; /* สีเข้มขึ้นเมื่อชี้ */
+  box-shadow: 0 6px 12px rgba(0, 122, 204, 0.4);
+}
+
+/* Button Active State: เมื่อกดปุ่ม */
+button:active {
+  transform: translateY(1px); /* ทำให้ปุ่มจมลงเล็กน้อยเมื่อกด */
 }
